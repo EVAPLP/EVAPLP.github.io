@@ -160,6 +160,91 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-台式机安装centos7提示“No-Caching-mode-page-found”-解决" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/06/30/台式机安装centos7提示“No-Caching-mode-page-found”-解决/">台式机安装centos7提示“No Caching mode page found” 解决！</a>
+    </h1>
+  
+
+        
+        <a href="/2019/06/30/台式机安装centos7提示“No-Caching-mode-page-found”-解决/" class="archive-article-date">
+  	<time datetime="2019-06-30T10:08:10.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-06-30</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>错误告警起因：风和日丽的某天，应需求在主机中安装系统centos7，一顿自信满满的操作结果很幸运的，未安装成功！！！还报出了如下错误！———所以更博解决方法一篇！</p>
+<pre><code>提示如下错误：
+
+[sdb] No Caching mode page found
+
+[sdb] Assuming drive cache:write through
+</code></pre><p>解决方法如下：</p>
+<p>一、查看镜像U盘盘符<br><img src="/images/pasted-3.png" alt="upload successful"></p>
+<p>1、按Tab键移动，然后进行编辑路径将</p>
+<pre><code>vmlinuz initrd=initrd.img inst.stage2=hd:LABEL=CentOS\x207\x20x86_64 quiet
+</code></pre><p>改为</p>
+<pre><code>vmlinuz initrd=initrd.img linux dd quiet
+</code></pre><p>2、然后按enter键，出现如下图的u盘（盘符）信息</p>
+<p><img src="/images/pasted-4.png" alt="upload successful"></p>
+<p>3、重启系统：使用ctrl+alt+del</p>
+<p>4、进入装机页面，选择“install centos 7”，按下“Tab键”，再次重复上面的步骤 。</p>
+<p>如下：</p>
+<pre><code>vmlinuz initrd=initrd.img inst.stage2=hd:LABEL=CentOS\x207\x20x86_64 quiet
+</code></pre><p>改为</p>
+<pre><code>vmlinuz initrd=initrd.img inst.stage2=hd:/dev/sdb4（自己的U盘盘符） quiet
+</code></pre><p>5、按enter键等待安装程序启动，进行CentOS的安装即可</p>
+<p>温馨提示：在进入系统装机程序时，未出现正常的装机界面。且显示器黑屏，提示VGA接口无法正常显示图像界面，等信息！一般为VGA显示接口功能低，无法显示正常画面。</p>
+<p>考虑更换显示器其他插口，如：HDMI  、 DP等。</p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/06/30/台式机安装centos7提示“No-Caching-mode-page-found”-解决/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-《科学上网》" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
