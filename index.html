@@ -160,6 +160,92 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-苹果系统合盘、拆盘操作。" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/07/苹果系统合盘、拆盘操作。/">苹果系统合盘、拆盘操作。</a>
+    </h1>
+  
+
+        
+        <a href="/2019/07/07/苹果系统合盘、拆盘操作。/" class="archive-article-date">
+  	<time datetime="2019-07-07T09:20:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <pre><code>批注：苹果系统进行合盘、拆盘操作命令。
+
+操作：苹果系统——实用工具——终端——输入以下命令操作
+</code></pre><p>一、合盘命令</p>
+<pre><code>1、diskutil list
+(注释:找到要合并的硬盘编号) 
+
+2、diskutil coreStorage create myLogicalVolGroup /dev/diskX /dev/diskY 
+(注释:X 和 Y 指要合并的硬盘编号) 
+
+3、diskutil coreStorage createVolume 50B457C3-ADC6-4EDC-9ABA-FD8C6EEDE69A jhfs+ &quot;Macintosh HD&quot; 100% 
+(注释:50B457C3-ADC6-4EDC-9ABA- FD8C6EEDE69A 是敲入第二步代码后出现的 lvgUUID) 
+</code></pre><p>二、拆盘命令</p>
+<pre><code>1、diskutil cs list ，然后回车
+
+出现一屏内部存储器信息。在第三行能看到：+--Logical Volume Group XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX，X都是16进制字符，统统复制下来备用。
+
+2、再次在终端窗口中输入：diskutil cs delete XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX
+
+这么多个X当然就是刚才复制的了，直接粘贴了事；回车后耐心等待半分钟，原配的Fusion Drive就被拆开了。
+
+3、最后在终端窗口中输入：exit，然后回车。
+
+终端界面会出现logout  ［Process completed］；完事大吉，关闭终端，回到恢复模式界面。
+</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/07/07/苹果系统合盘、拆盘操作。/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-台式机安装centos7提示“No-Caching-mode-page-found”-解决" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
