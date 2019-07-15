@@ -6,19 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/7 | EVAPLP</title>
+  <title>Mac升级自带Python | EVAPLP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="宠辱不惊 闲看庭前花开花落，去留无意漫随天外云卷云舒">
+  <meta name="description" content="参考链接如下： https://www.cnblogs.com/wangzhongqiu/p/9835648.html Homebrew 官网链接如下： https://brew.sh/index_zh-cn 一、检查本机python版本 1、查看python $ which python 终端输出： /usr/bin/python 2、检查python版本 python –version 二、关">
 <meta name="keywords" content="Linux、技术支持、兴趣、心情、随笔">
-<meta property="og:type" content="website">
-<meta property="og:title" content="EVAPLP">
-<meta property="og:url" content="http://yoursite.com/archives/2019/07/index.html">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mac升级自带Python">
+<meta property="og:url" content="http://yoursite.com/2019/07/15/Mac升级自带Python/index.html">
 <meta property="og:site_name" content="EVAPLP">
-<meta property="og:description" content="宠辱不惊 闲看庭前花开花落，去留无意漫随天外云卷云舒">
+<meta property="og:description" content="参考链接如下： https://www.cnblogs.com/wangzhongqiu/p/9835648.html Homebrew 官网链接如下： https://brew.sh/index_zh-cn 一、检查本机python版本 1、查看python $ which python 终端输出： /usr/bin/python 2、检查python版本 python –version 二、关">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-07-15T14:12:08.210Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="EVAPLP">
-<meta name="twitter:description" content="宠辱不惊 闲看庭前花开花落，去留无意漫随天外云卷云舒">
+<meta name="twitter:title" content="Mac升级自带Python">
+<meta name="twitter:description" content="参考链接如下： https://www.cnblogs.com/wangzhongqiu/p/9835648.html Homebrew 官网链接如下： https://brew.sh/index_zh-cn 一、检查本机python版本 1、查看python $ which python 终端输出： /usr/bin/python 2、检查python版本 python –version 二、关">
   
     <link rel="alternative" href="/atom.xml" title="EVAPLP" type="application/atom+xml">
   
@@ -158,76 +159,185 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-Mac升级自带Python" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      Mac升级自带Python
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/15/Mac升级自带Python/" class="archive-article-date">
+
+        
+        <a href="/2019/07/15/Mac升级自带Python/" class="archive-article-date">
   	<time datetime="2019-07-15T14:05:58.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-15</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/15/Mac升级自带Python/">Mac升级自带Python</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>参考链接如下：</p>
+<pre><code>https://www.cnblogs.com/wangzhongqiu/p/9835648.html
+</code></pre><p>Homebrew 官网链接如下：</p>
+<pre><code>https://brew.sh/index_zh-cn
+</code></pre><p>一、检查本机python版本</p>
+<p>1、查看python</p>
+<pre><code>$ which python
+</code></pre><p>终端输出：</p>
+<pre><code>/usr/bin/python
+</code></pre><p>2、检查python版本</p>
+<pre><code>python –version
+</code></pre><p>二、关于Homebrew</p>
+<p>1、为什么要使用Homebrew安装Python?</p>
+<p>   *总能下载到最新版本的python</p>
+<p>   *Homebrew版的python包含了最新的pip和setuptools工具</p>
+<p>2、安装Homebrew</p>
+<p>（1）首先需要安装苹果公司提供的免费IDE工具Xcode,或者不安装Xcode,只安装Xcode的命令行工具:</p>
+<pre><code>命令如下：
+$ xcode-select --install
+</code></pre><p>（2）其次需要安装Homebrew,安装方法参见官网<a href="http://brew.sh/" target="_blank" rel="noopener">http://brew.sh/</a></p>
+<p>（3）接着执行</p>
+<pre><code>命令如下：
+$ brew update
+</code></pre><p>通常在新安装package的时候都会更新brew</p>
+<p>三、安装最新版本python3</p>
+<pre><code>$ brew install python3
 
-        <div class="article-info info-on-right">
-          
-          
+$ which python3
+</code></pre><p>   终端输出：</p>
+<pre><code>/usr/local/bin/python3
+</code></pre>
+      
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/15/Mac升级自带Python/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/07/07/苹果系统合盘、拆盘操作。/" class="archive-article-date">
-  	<time datetime="2019-07-07T09:20:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-07</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/07/07/苹果系统合盘、拆盘操作。/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">苹果系统合盘、拆盘操作。</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/07/07/苹果系统合盘、拆盘操作。/">苹果系统合盘、拆盘操作。</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -250,8 +360,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
