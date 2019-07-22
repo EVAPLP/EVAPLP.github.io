@@ -160,6 +160,105 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-linux-密码重置-and-Mac-密码重置" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2019/07/22/linux-密码重置-and-Mac-密码重置/">linux 密码重置 and Mac 密码重置</a>
+    </h1>
+  
+
+        
+        <a href="/2019/07/22/linux-密码重置-and-Mac-密码重置/" class="archive-article-date">
+  	<time datetime="2019-07-22T12:55:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一、centos7 管理员密码重置。</p>
+<p>1、打开centos7，在选择进入系统的界面按“e”进入编辑页面。</p>
+<p>如图：<br><img src="/images/pasted-5.png" alt="upload successful"></p>
+<p>2、然后按向下键，找到以“Linux16”开头的行，在该行的最后面输入“init=/bin/sh”</p>
+<p>如图：<br><img src="/images/pasted-6.png" alt="upload successful"></p>
+<p>3、按“ctrl+X”组合键进入单用户模式</p>
+<p>如图：<br><img src="/images/pasted-7.png" alt="upload successful"></p>
+<p>4、输入“ls”查询当前位置（也可以省略），回车</p>
+<p>如图：<br><img src="/images/pasted-8.png" alt="upload successful"></p>
+<p>5、输入“mount -o remount,rw /”(注意mount与－o之间和rw与/之间的有空格)</p>
+<p>如图：<br><img src="/images/pasted-9.png" alt="upload successful"></p>
+<p>6、输入“passwd”回车</p>
+<p>如图：<br><img src="/images/pasted-10.png" alt="upload successful"></p>
+<p>7、接下来就是修改你的root账号密码了，重复输入一个不少于8位的密码（密码在输入的时候是不显示的，看起来就像没反应一样，只需要正确输入并回车就可以）</p>
+<p>如图：<br><img src="/images/pasted-11.png" alt="upload successful"></p>
+<p>8、输入touch /.autorelabel 回车</p>
+<p>如图：<br><img src="/images/pasted-12.png" alt="upload successful"></p>
+<p>9、输入exec /sbin/init,回车</p>
+<p>如图：<br><img src="/images/pasted-13.png" alt="upload successful"></p>
+<p>10、回车后出现下面的界面，这里稍微等几分钟，系统会自动重启。接下来就等系统重启然后进入查看是否已经修改成功了。</p>
+<p>二、Mac系统管理员密码重置。</p>
+<p>方式一：</p>
+<p>1、开机立即按下option键，待屏幕出现选择磁盘时松手，选择Recovery HD进入。</p>
+<p>2、语言可以选择中文，进入，在菜单栏的工具里，选择终端，输入resetpassword，回<br>车。</p>
+<pre><code>resetpassword
+</code></pre><p>3、在弹出重设密码的对话框中，选择账户，输入新密码，保存密码，退出工具。</p>
+<p>4、重启电脑，就可以用你的新密码登录电脑了。</p>
+<p>方式二：</p>
+<p>1、开机立即同时按下command+R，进入恢复模式。</p>
+<p>2、语言可以选择中文，进入，在菜单栏的工具里，选择终端，输入resetpassword，回车。</p>
+<pre><code>resetpassword
+</code></pre><p>3、在弹出重设密码的对话框，选择账户，输入新密码，保存密码，退出工具。</p>
+<p>4、重启电脑，就可以用你的新密码登录电脑了。</p>
+<p>参考链接如下：</p>
+<pre><code>参考链接一：https://baijiahao.baidu.com/s?id=1614000108255096283&amp;wfr=spider&amp;for=pc
+
+参考链接二：https://zhidao.baidu.com/question/1884692501474049788.html
+</code></pre>
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2019/07/22/linux-密码重置-and-Mac-密码重置/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-使用UltraISO（软碟通）制作U盘启动盘" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     

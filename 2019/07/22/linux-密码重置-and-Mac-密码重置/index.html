@@ -6,20 +6,30 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>使用UltraISO（软碟通）制作U盘启动盘 | EVAPLP</title>
+  <title>linux 密码重置 and Mac 密码重置 | EVAPLP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="一、工具准备 1.UltraISO（软碟通） 2.镜像文件 3.U盘一个（4G以上） 二、操作步骤 1.安装软碟通，完成安装后打开软碟通，文件-&amp;gt;打开，打开我们的iso镜像。 2.然后选择我们的U盘 3.点击启动-&amp;gt;写入硬盘映像 4.写入方式有zip和hdd两种，一般我们选择hdd或hdd+，选择了写入方式之后要先格式化，格式化完毕之后点击写入等待写入完毕即可 5.选择好写入方式直接写">
+  <meta name="description" content="一、centos7 管理员密码重置。 1、打开centos7，在选择进入系统的界面按“e”进入编辑页面。 如图： 2、然后按向下键，找到以“Linux16”开头的行，在该行的最后面输入“init=/bin/sh” 如图： 3、按“ctrl+X”组合键进入单用户模式 如图： 4、输入“ls”查询当前位置（也可以省略），回车 如图： 5、输入“mount -o remount,rw /”(注意moun">
 <meta name="keywords" content="Linux、技术支持、兴趣、心情、随笔">
 <meta property="og:type" content="article">
-<meta property="og:title" content="使用UltraISO（软碟通）制作U盘启动盘">
-<meta property="og:url" content="http://yoursite.com/2019/07/15/使用UltraISO（软碟通）制作U盘启动盘/index.html">
+<meta property="og:title" content="linux 密码重置 and Mac 密码重置">
+<meta property="og:url" content="http://yoursite.com/2019/07/22/linux-密码重置-and-Mac-密码重置/index.html">
 <meta property="og:site_name" content="EVAPLP">
-<meta property="og:description" content="一、工具准备 1.UltraISO（软碟通） 2.镜像文件 3.U盘一个（4G以上） 二、操作步骤 1.安装软碟通，完成安装后打开软碟通，文件-&amp;gt;打开，打开我们的iso镜像。 2.然后选择我们的U盘 3.点击启动-&amp;gt;写入硬盘映像 4.写入方式有zip和hdd两种，一般我们选择hdd或hdd+，选择了写入方式之后要先格式化，格式化完毕之后点击写入等待写入完毕即可 5.选择好写入方式直接写">
+<meta property="og:description" content="一、centos7 管理员密码重置。 1、打开centos7，在选择进入系统的界面按“e”进入编辑页面。 如图： 2、然后按向下键，找到以“Linux16”开头的行，在该行的最后面输入“init=/bin/sh” 如图： 3、按“ctrl+X”组合键进入单用户模式 如图： 4、输入“ls”查询当前位置（也可以省略），回车 如图： 5、输入“mount -o remount,rw /”(注意moun">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-07-15T14:37:24.395Z">
+<meta property="og:image" content="http://yoursite.com/images/pasted-5.png">
+<meta property="og:image" content="http://yoursite.com/images/pasted-6.png">
+<meta property="og:image" content="http://yoursite.com/images/pasted-7.png">
+<meta property="og:image" content="http://yoursite.com/images/pasted-8.png">
+<meta property="og:image" content="http://yoursite.com/images/pasted-9.png">
+<meta property="og:image" content="http://yoursite.com/images/pasted-10.png">
+<meta property="og:image" content="http://yoursite.com/images/pasted-11.png">
+<meta property="og:image" content="http://yoursite.com/images/pasted-12.png">
+<meta property="og:image" content="http://yoursite.com/images/pasted-13.png">
+<meta property="og:updated_time" content="2019-07-22T13:17:35.941Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="使用UltraISO（软碟通）制作U盘启动盘">
-<meta name="twitter:description" content="一、工具准备 1.UltraISO（软碟通） 2.镜像文件 3.U盘一个（4G以上） 二、操作步骤 1.安装软碟通，完成安装后打开软碟通，文件-&amp;gt;打开，打开我们的iso镜像。 2.然后选择我们的U盘 3.点击启动-&amp;gt;写入硬盘映像 4.写入方式有zip和hdd两种，一般我们选择hdd或hdd+，选择了写入方式之后要先格式化，格式化完毕之后点击写入等待写入完毕即可 5.选择好写入方式直接写">
+<meta name="twitter:title" content="linux 密码重置 and Mac 密码重置">
+<meta name="twitter:description" content="一、centos7 管理员密码重置。 1、打开centos7，在选择进入系统的界面按“e”进入编辑页面。 如图： 2、然后按向下键，找到以“Linux16”开头的行，在该行的最后面输入“init=/bin/sh” 如图： 3、按“ctrl+X”组合键进入单用户模式 如图： 4、输入“ls”查询当前位置（也可以省略），回车 如图： 5、输入“mount -o remount,rw /”(注意moun">
+<meta name="twitter:image" content="http://yoursite.com/images/pasted-5.png">
   
     <link rel="alternative" href="/atom.xml" title="EVAPLP" type="application/atom+xml">
   
@@ -159,38 +169,64 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-使用UltraISO（软碟通）制作U盘启动盘" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-linux-密码重置-and-Mac-密码重置" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      使用UltraISO（软碟通）制作U盘启动盘
+      linux 密码重置 and Mac 密码重置
     </h1>
   
 
         
-        <a href="/2019/07/15/使用UltraISO（软碟通）制作U盘启动盘/" class="archive-article-date">
-  	<time datetime="2019-07-15T14:33:30.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-15</time>
+        <a href="/2019/07/22/linux-密码重置-and-Mac-密码重置/" class="archive-article-date">
+  	<time datetime="2019-07-22T12:55:18.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-07-22</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>一、工具准备</p>
-<p>1.UltraISO（软碟通）</p>
-<p>2.镜像文件</p>
-<p>3.U盘一个（4G以上）</p>
-<p>二、操作步骤</p>
-<p>1.安装软碟通，完成安装后打开软碟通，文件-&gt;打开，打开我们的iso镜像。</p>
-<p>2.然后选择我们的U盘</p>
-<p>3.点击启动-&gt;写入硬盘映像</p>
-<p>4.写入方式有zip和hdd两种，一般我们选择hdd或hdd+，选择了写入方式之后要先格式化，格式化完毕之后点击写入等待写入完毕即可</p>
-<p>5.选择好写入方式直接写入即可完成U盘启动盘的制作</p>
-<p>参考链接如下：<a href="https://jingyan.baidu.com/article/5225f26b0bb45fe6fa0908bc.html" target="_blank" rel="noopener">https://jingyan.baidu.com/article/5225f26b0bb45fe6fa0908bc.html</a></p>
+        <p>一、centos7 管理员密码重置。</p>
+<p>1、打开centos7，在选择进入系统的界面按“e”进入编辑页面。</p>
+<p>如图：<br><img src="/images/pasted-5.png" alt="upload successful"></p>
+<p>2、然后按向下键，找到以“Linux16”开头的行，在该行的最后面输入“init=/bin/sh”</p>
+<p>如图：<br><img src="/images/pasted-6.png" alt="upload successful"></p>
+<p>3、按“ctrl+X”组合键进入单用户模式</p>
+<p>如图：<br><img src="/images/pasted-7.png" alt="upload successful"></p>
+<p>4、输入“ls”查询当前位置（也可以省略），回车</p>
+<p>如图：<br><img src="/images/pasted-8.png" alt="upload successful"></p>
+<p>5、输入“mount -o remount,rw /”(注意mount与－o之间和rw与/之间的有空格)</p>
+<p>如图：<br><img src="/images/pasted-9.png" alt="upload successful"></p>
+<p>6、输入“passwd”回车</p>
+<p>如图：<br><img src="/images/pasted-10.png" alt="upload successful"></p>
+<p>7、接下来就是修改你的root账号密码了，重复输入一个不少于8位的密码（密码在输入的时候是不显示的，看起来就像没反应一样，只需要正确输入并回车就可以）</p>
+<p>如图：<br><img src="/images/pasted-11.png" alt="upload successful"></p>
+<p>8、输入touch /.autorelabel 回车</p>
+<p>如图：<br><img src="/images/pasted-12.png" alt="upload successful"></p>
+<p>9、输入exec /sbin/init,回车</p>
+<p>如图：<br><img src="/images/pasted-13.png" alt="upload successful"></p>
+<p>10、回车后出现下面的界面，这里稍微等几分钟，系统会自动重启。接下来就等系统重启然后进入查看是否已经修改成功了。</p>
+<p>二、Mac系统管理员密码重置。</p>
+<p>方式一：</p>
+<p>1、开机立即按下option键，待屏幕出现选择磁盘时松手，选择Recovery HD进入。</p>
+<p>2、语言可以选择中文，进入，在菜单栏的工具里，选择终端，输入resetpassword，回<br>车。</p>
+<pre><code>resetpassword
+</code></pre><p>3、在弹出重设密码的对话框中，选择账户，输入新密码，保存密码，退出工具。</p>
+<p>4、重启电脑，就可以用你的新密码登录电脑了。</p>
+<p>方式二：</p>
+<p>1、开机立即同时按下command+R，进入恢复模式。</p>
+<p>2、语言可以选择中文，进入，在菜单栏的工具里，选择终端，输入resetpassword，回车。</p>
+<pre><code>resetpassword
+</code></pre><p>3、在弹出重设密码的对话框，选择账户，输入新密码，保存密码，退出工具。</p>
+<p>4、重启电脑，就可以用你的新密码登录电脑了。</p>
+<p>参考链接如下：</p>
+<pre><code>参考链接一：https://baijiahao.baidu.com/s?id=1614000108255096283&amp;wfr=spider&amp;for=pc
 
+参考链接二：https://zhidao.baidu.com/question/1884692501474049788.html
+</code></pre>
       
 
       
@@ -269,7 +305,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/15/使用UltraISO（软碟通）制作U盘启动盘/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/07/22/linux-密码重置-and-Mac-密码重置/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -283,18 +319,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2019/07/22/linux-密码重置-and-Mac-密码重置/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          linux 密码重置 and Mac 密码重置
-        
-      </div>
-    </a>
   
-  
-    <a href="/2019/07/15/Mac升级自带Python/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">Mac升级自带Python</div>
+    <a href="/2019/07/15/使用UltraISO（软碟通）制作U盘启动盘/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">使用UltraISO（软碟通）制作U盘启动盘</div>
       <i class="icon-circle-right"></i>
     </a>
   
